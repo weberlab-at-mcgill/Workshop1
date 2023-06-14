@@ -1,9 +1,11 @@
 # Workshop1
 
 ## Before the workshop:
-### You will need: Google chrome. Python, MATLAB
+You will need the following programs: Google chrome. Python, MATLAB. 
 
-### Install the following python packages using the following commands:
+To use python I recommend anaconda https://www.anaconda.com/download. You can use spyder or vscode IDEs within Anaconda Navigator to start coding in python. 
+
+### Install the following python packages by typing the following commands in the console:
 pip install cooler
 pip install cooltools
 pip install numpy
