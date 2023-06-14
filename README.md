@@ -28,7 +28,7 @@ Control + shift + C (on windows/chrome) to open developer tools\
 In the console type: gl.getParameter(gl.MAX_TEXTURE_SIZE)\
 Remember this number.\
 
-### Email me the number and the organism you chose. My email is lucas.philipp@mail.mcgill.ca
+### Email me the number and the organism you chose. My email is my first name dot my last name @mail.mcgill.ca
 
 # Part 1
 
