@@ -14,8 +14,11 @@ pip install matplotlib
 ```
 ### Request access to dataset hosted by Zenodo.
 Once approved to access the dataset, choose your favourite organism and download the appropriate .zip file.\
-Find the .hic file. Open https://aidenlab.org/juicebox/ in chrome. Open your .hic file using juicebox. You should see your HiC matrix plotted. You can use the dropdown menus to navigate to different chromosomes/HiC_SCAFFOLDS.\
-If your folder doesn't have a .hic file don't worry, download another organism from zenodo and visualize that data instead.
+Open the folder. You should see a .hic file in the folder.\
+If your folder doesn't have a .hic file don't worry, download another organism from zenodo.
+
+## Open https://aidenlab.org/juicebox/ in chrome.
+Open your .hic file using juicebox. You should see a plot of your HiC matrix. You can use the dropdown menus to navigate to different chromosomes/HiC_SCAFFOLDS.\
 
 ### Install the following MATLAB toolkits
 
