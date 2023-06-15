@@ -1,5 +1,5 @@
 # Workshop1
-This workshop is catered to all levels of familiarity/expertise with HiC and computer programming, especially beginners.
+This workshop is catered to all levels of familiarity/expertise with HiC and computer programming, especially beginners. The workshop is in Stewart S3/3 June 20th from 1-5pm.
 
 ## Before the workshop:
 You will need the following programs: Google chrome. Python, MATLAB.\
