@@ -36,9 +36,9 @@ Remember this number.\
 !!!\
 There is a bug in other instances of CSynth limiting the number of monomers in the 3D model < 999 if the .txt upload format is used.\
 This includes:\
-https://csynth.molbiol.ox.ac.uk/csynthstatic/latest/csynth.html/\
+https://csynth.molbiol.ox.ac.uk/csynthstatic/latest/csynth.html/ \
 as well as\
-https://csynth.molbiol.ox.ac.uk/csynth/login\
+https://csynth.molbiol.ox.ac.uk/csynth/login \
 !!!\
 Use the github.io server instead.
 
