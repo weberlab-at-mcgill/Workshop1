@@ -23,7 +23,7 @@ Open the folder. You should see a .hic file in the folder.\
 If your folder doesn't have a .hic file don't worry, download another organism from zenodo.
 
 ## Open https://aidenlab.org/juicebox/ in chrome.
-Open your .hic file using juicebox. You should see a plot of your HiC matrix. You can use the dropdown menus to navigate to different chromosomes/HiC_SCAFFOLDS.\
+Open your .hic file using juicebox. You should see a plot of your HiC matrix. You can use the dropdown menus to navigate to different chromosomes/HiC_SCAFFOLDS. \
 
 ### Install MATLAB
 
@@ -31,7 +31,7 @@ Open your .hic file using juicebox. You should see a plot of your HiC matrix. Yo
 Command + option + I (on mac/chrome) to open developer tools\
 Control + shift + C (on windows/chrome) to open developer tools\
 In the console type: gl.getParameter(gl.MAX_TEXTURE_SIZE)\
-Remember this number.\
+Remember this number. \
 
 !!!\
 There is a bug in other instances of CSynth limiting the number of monomers in the 3D model < 999 if the .txt upload format is used.\
