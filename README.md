@@ -45,27 +45,26 @@ Use https://csynth.github.io/csynth/csynth.html instead.
 ### Email me the number and the organism you chose. My email is my first name dot my last name @mail.mcgill.ca
 
 # Part 1
-Introd
+Introduction to HiC
 
 # Part 2
 3D Visualization of HiC Data\
 
-
+For the CSynth structure to converge, the browser window needs to be displayed on your screen. Ask me about code to periodicaly ping server to fix this and have CSynth run in the background.
 
 BED data source: rainbow
 
-chr20_5kb.RAWobserved
-chr21_5kb.RAWobserved
-chr22_5kb.RAWobserved
+Explain files uploaded to GitHub:\
+chr20_5kb.RAWobserved\
+chr21_5kb.RAWobserved\
+chr22_5kb.RAWobserved\
 
-chr20_5kb.RAWobserved.txt
-chr21_5kb.RAWobserved.txt
-chr22_5kb.RAWobserved.txt
+chr20_5kb.RAWobserved.txt\
+chr21_5kb.RAWobserved.txt\
+chr22_5kb.RAWobserved.txt\
 
-
-CSynth_FISH_Compare.m
-DATA SOURCES.txt
-
+CSynth_FISH_Compare.m\
+DATA SOURCES.txt\
 
 FISH_chr20bp.csv\
 FISH_chr21bp.csv\
@@ -75,10 +74,12 @@ FISH_chr20xyz.csv\
 FISH_chr21xyz.csv\
 FISH_chr22xyz.csv\
 
-GSE63525_IMR90_README.rtf
-IMR90_5kbp_chr20_MAPQG0_RAW_3D.xyz
-IMR90_5kbp_chr21_MAPQG0_RAW_3D.xyz
-IMR90_5kbp_chr22_MAPQG0_RAW_3D.xyz
+GSE63525_IMR90_README.rtf\
+IMR90_5kbp_chr20_MAPQG0_RAW_3D.xyz\
+IMR90_5kbp_chr21_MAPQG0_RAW_3D.xyz\
+IMR90_5kbp_chr22_MAPQG0_RAW_3D.xyz\
+
+automatic_CSynth.js\
 
 # Part 3
 P(s) curves
