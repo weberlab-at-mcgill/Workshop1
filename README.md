@@ -42,7 +42,7 @@ https://csynth.molbiol.ox.ac.uk/csynth/login \
 !!!\
 Use https://csynth.github.io/csynth/csynth.html instead.
 
-### Email me the number and the organism you chose. My email is my first name dot my last name @mail.mcgill.ca
+### Email me the number, whether you use windows or mac, and the organism you chose. My email is my first name dot my last name @mail.mcgill.ca
 
 # Part 1
 Introduction to HiC
