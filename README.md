@@ -90,8 +90,8 @@ Drag and drop you .txt file into CSynth browser window: https://csynth.github.io
 In this part of the workshop we will optomize CSynth parameters to give us the most accurate 3D conformations possible. To do this we will use a data for IMR90 human immune cells. There are two types of data here: HiC data, and FISH (fluorescent in-situ hybridization) data. For these cells, the xyz position of many pairs of fluorescence probes that hybridize to a specific sequence of the genome, were recorded. We can compare the euclidian distance between fluorescence probes measured by microscopy to the euclidian distance between the same regions of the genome predicted by CSynth. We will change CSynth parameters to minimize these discrepancy as much as we can.
 
 We will optomize two parameters that affect the 3D conformation significantly: \
-SPRINGPOW - this changes the relative importance of long and short distance effects (-2,-1,0) \
-CONTACTFORCE - this changes magnitude of attraction between HiC contacts (20,40,60,80,100) \
+SPRINGPOW - this changes the relative importance of long and short distance effects. We will set SPRINGPOW to either (-2,-1,0) \
+CONTACTFORCE - this changes magnitude of attraction between HiC contacts. We will set CONTACTFORCE to either (20,40,60,80,100)
 
 Write your combination of parameters on the whiteboard in front of the room so it is not repeated by someone else.
 
