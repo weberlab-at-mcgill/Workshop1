@@ -45,10 +45,10 @@ Use https://csynth.github.io/csynth/csynth.html instead.
 
 ### Email me the number, whether you use windows or mac, and the organism you chose. My email is my first name dot my last name @mail.mcgill.ca
 
-# Part 1
-Introduction to HiC
+# Part 1 (30mins)
+Introduction to HiC 
 
-# Part 2
+# Part 2 (2hrs)
 3D Visualization of HiC Data\
 
 For the CSynth structure to converge, the browser window needs to be displayed on your screen. Ask me about code to periodicaly ping server to fix this and have CSynth run in the background.
@@ -113,7 +113,7 @@ We will optomize two parameters that affect the 3D conformation significantly:
 SPRINGPOW - this changes the relative importance of long and short distance effects (-2,-1,0)
 CONTACTFORCE - this changes magnitude of attraction between HiC contacts (20,40,60,80,100)
 
-# Part 3
+# Part 3 (2hrs)
 P(s) curves
 https://zenodo.org/record/8040563.\
 plot_P(s)_workshop.py\
