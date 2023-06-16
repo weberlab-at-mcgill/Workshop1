@@ -53,10 +53,37 @@ Introduction to HiC
 In this part of the tutorial we will compute contact probability or P(s) curves for many organisms across the tree of life.
 
 Use the data here:
-https://zenodo.org/record/8040563. \
+https://zenodo.org/record/8040563.
 
-and the following python script:
-plot_P(s)_workshop.py \
+...and the following python script:
+plot_P(s)_workshop.py
+
+Make sure you save the P(s) curve data. Name the .csv file according to your organism. If you finish repeat for a different organism. /
+
+MAC ONLY: /
+If you want to visualize the 3D conformation of the chromosome for your organisms go to terminal and type:
+
+In terminal:
+```
+pip install cooler
+
+cd "your organism folder"
+
+cooler dump -t chroms "name_of_mcool_file"::/resolutions/5000
+```
+You should see an output similar to:
+```
+HiC_scaffold_1
+HiC_scaffold_2
+HiC_scaffold_3
+etc…
+```
+These are the names of the chromosomes in the .mcool file. Change the bash code below: change the length of the for loop depending on how many chromosomes you have, change the file names, and change the .mcool file name. Then execute the command in terminal.
+
+```
+for i in $(seq 1 84);  do cooler dump -t pixels -r HiC_scaffold_${i} -r2 HiC_scaffold_${i} -o temp.txt --join GSM5182720_LetJap1.0_HiC.mcool::/resolutions/5000; cut -f 2,5,7 temp.txt | column -t -s $"\t" > Arctic_lamprey_muscle_HiC_scaffold_${i}.txt; rm -f temp.txt; done
+```
+Drag and drop you .txt file into CSynth browser window: https://csynth.github.io/csynth/csynth.html
 
 # Part 3 (2hrs)
 3D Visualization of HiC Data\
@@ -102,20 +129,6 @@ removes the gui so impossible to use the gui after to click save_xyz
 
 pearson correlation between FISH/HiC matricies
 
-In terminal:
-pip install cooler
-
-cd into your organism folder
-
-cooler dump -t chroms  name_of_mcool_file::/resolutions/5000
-HiC_scaffold_1
-HiC_scaffold_2
-HiC_scaffold_3
-etc…
-
-change the length of the for loop depending on how many chromosomes you have, the file names, and the .mcool file name
-
-for i in $(seq 1 84);  do cooler dump -t pixels -r HiC_scaffold_${i} -r2 HiC_scaffold_${i} -o temp.txt --join GSM5182720_LetJap1.0_HiC.mcool::/resolutions/5000; cut -f 2,5,7 temp.txt | column -t -s $"\t" > Arctic_lamprey_muscle_HiC_scaffold_${i}.txt; rm -f temp.txt; done
 
 automatic_CSynth.js\
 
