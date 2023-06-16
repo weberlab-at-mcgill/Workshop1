@@ -100,34 +100,34 @@ Write your combination of parameters on the whiteboard in front of the room so i
 The source publications i.e. where the data comes from:
 DATA SOURCES.txt
 
-This is the HiC data, unzip these files:
-chr20_5kb.RAWobserved.txt.zip
-chr21_5kb.RAWobserved.txt.zip
+This is the HiC data, unzip these files: \
+chr20_5kb.RAWobserved.txt.zip \
+chr21_5kb.RAWobserved.txt.zip \
 chr22_5kb.RAWobserved.txt.zip
 
-These are the primary sequence locations of the fluorescence probes:
-FISH_chr20bp.csv
-FISH_chr21bp.csv
+These are the primary sequence locations of the fluorescence probes: \
+FISH_chr20bp.csv \
+FISH_chr21bp.csv \
 FISH_chr22bp.csv
 
-These are the measured xyz positions of the fluorescence probes in the cell:
-FISH_chr20xyz.csv
-FISH_chr21xyz.csv
+These are the measured xyz positions of the fluorescence probes in the cell: \
+FISH_chr20xyz.csv \
+FISH_chr21xyz.csv \
 FISH_chr22xyz.csv
 
-These are the structures predicted by CSynth using the default parameters:
-IMR90_5kbp_chr20_MAPQG0_RAW_3D.xyz
-IMR90_5kbp_chr21_MAPQG0_RAW_3D.xyz
+These are the structures predicted by CSynth using the default parameters: \
+IMR90_5kbp_chr20_MAPQG0_RAW_3D.xyz \
+IMR90_5kbp_chr21_MAPQG0_RAW_3D.xyz \
 IMR90_5kbp_chr22_MAPQG0_RAW_3D.xyz
 
 Drag and drop your chr20_5kb.RAWobserved.txt into CSynth browser window: https://csynth.github.io/csynth/csynth.html /
 Change SPRINGPOW and CONTACTFORCE parameters. Wait for the conformation to converge. For the CSynth structure to converge, the browser window needs to be displayed on your screen.
 
 ### Select:
-Autoscale
-BED data source: rainbow
-Ribbon -> diameter: 30
-Extras -> scripts -> eigen
+Autoscale \
+BED data source: rainbow \
+Ribbon -> diameter: 30 \
+Extras -> scripts -> eigen \
 
 ### Then Select:
 save/load -> save_xyz
