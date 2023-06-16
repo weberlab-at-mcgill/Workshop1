@@ -81,7 +81,11 @@ etc…
 These are the names of the chromosomes in the .mcool file. Change the bash code below: change the length of the for loop depending on how many chromosomes you have, change the file names, and change the .mcool file name. Then execute the command in terminal.
 
 ```
-for i in $(seq 1 84);  do cooler dump -t pixels -r HiC_scaffold_${i} -r2 HiC_scaffold_${i} -o temp.txt --join GSM5182720_LetJap1.0_HiC.mcool::/resolutions/5000; cut -f 2,5,7 temp.txt | column -t -s $"\t" > Arctic_lamprey_muscle_HiC_scaffold_${i}.txt; rm -f temp.txt; done
+for i in $(seq 1 84);
+do cooler dump -t pixels -r HiC_scaffold_${i} -r2 HiC_scaffold_${i} -o temp.txt --join GSM5182720_LetJap1.0_HiC.mcool::/resolutions/5000;
+cut -f 2,5,7 temp.txt | column -t -s $"\t" > Arctic_lamprey_muscle_HiC_scaffold_${i}.txt;
+rm -f temp.txt;
+done
 ```
 Drag and drop you .txt file into CSynth browser window: https://csynth.github.io/csynth/csynth.html
 
