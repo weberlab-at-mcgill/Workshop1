@@ -79,6 +79,21 @@ IMR90_5kbp_chr20_MAPQG0_RAW_3D.xyz\
 IMR90_5kbp_chr21_MAPQG0_RAW_3D.xyz\
 IMR90_5kbp_chr22_MAPQG0_RAW_3D.xyz\
 
+In terminal:
+pip install cooler
+
+cd into your organism folder
+
+cooler dump -t chroms  name_of_mcool_file::/resolutions/5000
+HiC_scaffold_1
+HiC_scaffold_2
+HiC_scaffold_3
+etc…
+
+change the length of the for loop depending on how many chromosomes you have, the file names, and the .mcool file name
+
+for i in $(seq 1 84);  do cooler dump -t pixels -r HiC_scaffold_${i} -r2 HiC_scaffold_${i} -o temp.txt --join GSM5182720_LetJap1.0_HiC.mcool::/resolutions/5000; cut -f 2,5,7 temp.txt | column -t -s $"\t" > Arctic_lamprey_muscle_HiC_scaffold_${i}.txt; rm -f temp.txt; done
+
 automatic_CSynth.js\
 
 # Part 3
