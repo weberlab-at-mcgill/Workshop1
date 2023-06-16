@@ -31,7 +31,7 @@ Open your .hic file using juicebox. You should see a plot of your HiC matrix. Yo
 Command + option + I (on mac/chrome) to open developer tools\
 Control + shift + C (on windows/chrome) to open developer tools\
 In the console type: gl.getParameter(gl.MAX_TEXTURE_SIZE)\
-Remember this number. \
+Remember this number.
 
 !!!\
 There is a bug in other instances of CSynth limiting the number of monomers in the 3D model < 999 if the .txt upload format is used.\
