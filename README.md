@@ -100,10 +100,10 @@ Write your combination of parameters on the whiteboard in front of the room so i
 The source publications i.e. where the data comes from:
 DATA SOURCES.txt
 
-This is the HiC data:
-chr20_5kb.RAWobserved.txt
-chr21_5kb.RAWobserved.txt
-chr22_5kb.RAWobserved.txt
+This is the HiC data, unzip these files:
+chr20_5kb.RAWobserved.txt.zip
+chr21_5kb.RAWobserved.txt.zip
+chr22_5kb.RAWobserved.txt.zip
 
 These are the primary sequence locations of the fluorescence probes:
 FISH_chr20bp.csv
