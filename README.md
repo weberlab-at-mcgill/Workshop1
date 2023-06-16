@@ -52,7 +52,10 @@ Introduction to HiC
 
 For the CSynth structure to converge, the browser window needs to be displayed on your screen. Ask me about code to periodicaly ping server to fix this and have CSynth run in the background.
 
+Autoscale
 BED data source: rainbow
+Ribbon -> diameter: 30
+Extras -> scripts -> eigen
 
 Explain files uploaded to GitHub:\
 chr20_5kb.RAWobserved\
@@ -79,6 +82,15 @@ IMR90_5kbp_chr20_MAPQG0_RAW_3D.xyz\
 IMR90_5kbp_chr21_MAPQG0_RAW_3D.xyz\
 IMR90_5kbp_chr22_MAPQG0_RAW_3D.xyz\
 
+%relative error, RE
+%RE=|H_ij - F_ij|/F_ij;
+%F_ij FISH distance, H_ij HiC distance, ij genomic loci
+
+save/load -> save_xyz FIRST, THEN CLICK save big image no gui
+removes the gui so impossible to use the gui after to click save_xyz
+
+pearson correlation between FISH/HiC matricies
+
 In terminal:
 pip install cooler
 
@@ -95,6 +107,10 @@ change the length of the for loop depending on how many chromosomes you have, th
 for i in $(seq 1 84);  do cooler dump -t pixels -r HiC_scaffold_${i} -r2 HiC_scaffold_${i} -o temp.txt --join GSM5182720_LetJap1.0_HiC.mcool::/resolutions/5000; cut -f 2,5,7 temp.txt | column -t -s $"\t" > Arctic_lamprey_muscle_HiC_scaffold_${i}.txt; rm -f temp.txt; done
 
 automatic_CSynth.js\
+
+We will optomize two parameters that affect the 3D conformation significantly:
+SPRINGPOW - this changes the relative importance of long and short distance effects (-2,-1,0)
+CONTACTFORCE - this changes magnitude of attraction between HiC contacts (20,40,60,80,100)
 
 # Part 3
 P(s) curves
