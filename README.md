@@ -53,10 +53,7 @@ Introduction to HiC
 In this part of the workshop we will compute contact probability or P(s) curves for many organisms across the tree of life.
 
 Use the data here:
-https://zenodo.org/record/8040563.
-
-...and the following python script:
-plot_P(s)_workshop.py
+https://zenodo.org/record/8040563 and the following python script: plot_P(s)_workshop.py
 
 Make sure you save the P(s) curve data. Name the .csv file according to your organism. If you finish repeat for a different organism. Look around the room to see the shapes of P(s) curves other people are calculating. How are they similar/different to your organism? Does your organisms exhibit chromosome to chromosome variation?
 
