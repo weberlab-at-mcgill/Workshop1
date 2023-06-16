@@ -41,14 +41,24 @@ as well as\
 https://csynth.molbiol.ox.ac.uk/csynth/login \
 !!!\
 
-Use https://csynth.github.io/csynth/csynth.html instead.
+Use https://csynth.github.io/csynth/csynth.html instead.\
 
 ### Email me the number, whether you use windows or mac, and the organism you chose. My email is my first name dot my last name @mail.mcgill.ca
 
 # Part 1 (30mins)
-Introduction to HiC 
+Introduction to HiC
 
+### Clone this github repo.
 # Part 2 (2hrs)
+In this part of the tutorial we will compute contact probability or P(s) curves for many organisms across the tree of life.
+
+Use the data here:
+https://zenodo.org/record/8040563. \
+
+and the following python script:
+plot_P(s)_workshop.py \
+
+# Part 3 (2hrs)
 3D Visualization of HiC Data\
 
 For the CSynth structure to converge, the browser window needs to be displayed on your screen. Ask me about code to periodicaly ping server to fix this and have CSynth run in the background.
@@ -113,10 +123,9 @@ We will optomize two parameters that affect the 3D conformation significantly:
 SPRINGPOW - this changes the relative importance of long and short distance effects (-2,-1,0)
 CONTACTFORCE - this changes magnitude of attraction between HiC contacts (20,40,60,80,100)
 
-# Part 3 (2hrs)
-P(s) curves
-https://zenodo.org/record/8040563.\
-plot_P(s)_workshop.py\
+# Part 4 (30min)
+Data upload.
+
 
 
 
