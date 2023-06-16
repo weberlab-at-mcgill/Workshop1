@@ -50,7 +50,7 @@ Introduction to HiC
 
 ### Clone this github repo.
 # Part 2 (2hrs)
-In this part of the tutorial we will compute contact probability or P(s) curves for many organisms across the tree of life.
+In this part of the workshop we will compute contact probability or P(s) curves for many organisms across the tree of life.
 
 Use the data here:
 https://zenodo.org/record/8040563.
@@ -58,10 +58,10 @@ https://zenodo.org/record/8040563.
 ...and the following python script:
 plot_P(s)_workshop.py
 
-Make sure you save the P(s) curve data. Name the .csv file according to your organism. If you finish repeat for a different organism. /
+Make sure you save the P(s) curve data. Name the .csv file according to your organism. If you finish repeat for a different organism. Look around the room to see the shapes of P(s) curves other people are calculating. How are they similar/different to your organism? Does your organisms exhibit chromosome to chromosome variation?
 
-MAC ONLY: /
-If you want to visualize the 3D conformation of the chromosome for your organisms go to terminal and type:
+### MAC ONLY:
+If you want to visualize the 3D conformation of chromosomes from your organisms open a new terminal window and type:
 
 In terminal:
 ```
@@ -90,14 +90,13 @@ done
 Drag and drop you .txt file into CSynth browser window: https://csynth.github.io/csynth/csynth.html
 
 # Part 3 (2hrs)
-3D Visualization of HiC Data\
+In this part of the workshop we will optomize CSynth parameters to give us the most accurate 3D conformations possible. To do this we will use a data for IMR90 human immune cells. There are two types of data here: HiC data, and FISH (fluorescent in-situ hybridization) data. For these cells, the xyz position of many pairs of fluorescence probes that hybridize to a specific sequence of the genome, were recorded. We can compare the euclidian distance between fluorescence probes measured by microscopy to the euclidian distance between the same regions of the genome predicted by CSynth. We will change CSynth parameters to minimize these discrepancy as much as we can.\
 
-For the CSynth structure to converge, the browser window needs to be displayed on your screen. Ask me about code to periodicaly ping server to fix this and have CSynth run in the background.
+We will optomize two parameters that affect the 3D conformation significantly: \
+SPRINGPOW - this changes the relative importance of long and short distance effects (-2,-1,0) \
+CONTACTFORCE - this changes magnitude of attraction between HiC contacts (20,40,60,80,100) \
 
-Autoscale
-BED data source: rainbow
-Ribbon -> diameter: 30
-Extras -> scripts -> eigen
+Write your combination of parameters on the whiteboard in front of the room so it is not repeated by someone else.
 
 Explain files uploaded to GitHub:\
 chr20_5kb.RAWobserved\
@@ -134,11 +133,18 @@ removes the gui so impossible to use the gui after to click save_xyz
 pearson correlation between FISH/HiC matricies
 
 
+\
+
+For the CSynth structure to converge, the browser window needs to be displayed on your screen. Ask me about code to periodicaly ping server to fix this and have CSynth run in the background.
+
+Autoscale
+BED data source: rainbow
+Ribbon -> diameter: 30
+Extras -> scripts -> eigen
+
 automatic_CSynth.js\
 
-We will optomize two parameters that affect the 3D conformation significantly:
-SPRINGPOW - this changes the relative importance of long and short distance effects (-2,-1,0)
-CONTACTFORCE - this changes magnitude of attraction between HiC contacts (20,40,60,80,100)
+
 
 # Part 4 (30min)
 Data upload.
