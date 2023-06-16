@@ -84,10 +84,10 @@ cut -f 2,5,7 temp.txt | column -t -s $"\t" > Arctic_lamprey_muscle_HiC_scaffold_
 rm -f temp.txt;
 done
 ```
-Drag and drop you .txt file into CSynth browser window: https://csynth.github.io/csynth/csynth.html
+Drag and drop your .txt file into CSynth browser window: https://csynth.github.io/csynth/csynth.html
 
 # Part 3 (2hrs)
-In this part of the workshop we will optomize CSynth parameters to give us the most accurate 3D conformations possible. To do this we will use a data for IMR90 human immune cells. There are two types of data here: HiC data, and FISH (fluorescent in-situ hybridization) data. For these cells, the xyz position of many pairs of fluorescence probes that hybridize to a specific sequence of the genome, were recorded. We can compare the euclidian distance between fluorescence probes measured by microscopy to the euclidian distance between the same regions of the genome predicted by CSynth. We will change CSynth parameters to minimize these discrepancy as much as we can.
+In this part of the workshop we will optomize CSynth parameters to give us the most accurate 3D conformations possible. To do this we will use a data for IMR90 human immune cells. There are two types of data here: HiC data, and FISH (fluorescent in-situ hybridization) data. For these cells, the xyz position of many pairs of fluorescence probes that hybridize to a specific sequence of the genome, were recorded. We can compare the euclidian distance between fluorescence probes measured by microscopy to the euclidian distance between the same regions of the genome predicted by CSynth. We will change CSynth parameters to minimize these discrepancy as much as we can. We will repeat this analysis for three chromosomes: chr20, chr21, chr22.
 
 We will optomize two parameters that affect the 3D conformation significantly: \
 SPRINGPOW - this changes the relative importance of long and short distance effects. We will set SPRINGPOW to either (-2,-1,0) \
@@ -95,58 +95,61 @@ CONTACTFORCE - this changes magnitude of attraction between HiC contacts. We wil
 
 Write your combination of parameters on the whiteboard in front of the room so it is not repeated by someone else.
 
-Explain files uploaded to GitHub:\
-chr20_5kb.RAWobserved\
-chr21_5kb.RAWobserved\
-chr22_5kb.RAWobserved\
+Here is a description of the files you will need:
 
-chr20_5kb.RAWobserved.txt\
-chr21_5kb.RAWobserved.txt\
-chr22_5kb.RAWobserved.txt\
+The source publications i.e. where the data comes from:
+DATA SOURCES.txt
 
-CSynth_FISH_Compare.m\
-DATA SOURCES.txt\
+This is the HiC data:
+chr20_5kb.RAWobserved.txt
+chr21_5kb.RAWobserved.txt
+chr22_5kb.RAWobserved.txt
 
-FISH_chr20bp.csv\
-FISH_chr21bp.csv\
-FISH_chr22bp.csv\
+These are the primary sequence locations of the fluorescence probes:
+FISH_chr20bp.csv
+FISH_chr21bp.csv
+FISH_chr22bp.csv
 
-FISH_chr20xyz.csv\
-FISH_chr21xyz.csv\
-FISH_chr22xyz.csv\
+These are the measured xyz positions of the fluorescence probes in the cell:
+FISH_chr20xyz.csv
+FISH_chr21xyz.csv
+FISH_chr22xyz.csv
 
-GSE63525_IMR90_README.rtf\
-IMR90_5kbp_chr20_MAPQG0_RAW_3D.xyz\
-IMR90_5kbp_chr21_MAPQG0_RAW_3D.xyz\
-IMR90_5kbp_chr22_MAPQG0_RAW_3D.xyz\
+These are the structures predicted by CSynth using the default parameters:
+IMR90_5kbp_chr20_MAPQG0_RAW_3D.xyz
+IMR90_5kbp_chr21_MAPQG0_RAW_3D.xyz
+IMR90_5kbp_chr22_MAPQG0_RAW_3D.xyz
 
-%relative error, RE
-%RE=|H_ij - F_ij|/F_ij;
-%F_ij FISH distance, H_ij HiC distance, ij genomic loci
+Drag and drop your chr20_5kb.RAWobserved.txt into CSynth browser window: https://csynth.github.io/csynth/csynth.html /
+Change SPRINGPOW and CONTACTFORCE parameters. Wait for the conformation to converge. For the CSynth structure to converge, the browser window needs to be displayed on your screen.
 
-save/load -> save_xyz FIRST, THEN CLICK save big image no gui
-removes the gui so impossible to use the gui after to click save_xyz
-
-pearson correlation between FISH/HiC matricies
-
-
-\
-
-For the CSynth structure to converge, the browser window needs to be displayed on your screen. Ask me about code to periodicaly ping server to fix this and have CSynth run in the background.
-
+Select:
 Autoscale
 BED data source: rainbow
 Ribbon -> diameter: 30
 Extras -> scripts -> eigen
 
-automatic_CSynth.js\
+Select FIRST:
+save/load -> save_xyz
+THEN select:
+save/load -> save big image no gui
 
+!!! save big image no gui removes the gui so impossible to use the gui after to click save_xyz !!!
 
+Rename your structure/image according to the chromosome and parameters you used.
+
+Open and run: CSynth_FISH_Compare.m
+
+Calculate the mean relative error (RE) between FISH probe separation and CSynth separation:
+%RE = |H_ij - F_ij|/F_ij;
+%F_ij FISH distance, H_ij HiC distance, ij genomic loci
+
+Calculate the mean pearson correlation between FISH/HiC matricies.
+
+Save this data in an excel spreadsheet.
 
 # Part 4 (30min)
-Data upload.
-
-
+We will decide how to pool our data together.
 
 
 
