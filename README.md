@@ -16,7 +16,7 @@ pip install matplotlib
 ### Request access to dataset hosted by Zenodo.
 Create a zenodo account: https://zenodo.org/ you can login using your github account.\
 Confirm your email attached to your zenodo account by clicking the link in the email sent to you by zenodo.\
-Go to: https://zenodo.org/record/8040563.\
+Go to: https://zenodo.org/record/8040563. \
 Request access to the data.\
 Once approved to access the dataset, choose your favourite organism and download the appropriate .zip file.\
 Open the folder. You should see a .hic file in the folder.\
