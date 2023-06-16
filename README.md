@@ -127,7 +127,7 @@ Change SPRINGPOW and CONTACTFORCE parameters. Wait for the conformation to conve
 Autoscale \
 BED data source: rainbow \
 Ribbon -> diameter: 30 \
-Extras -> scripts -> eigen \
+Extras -> scripts -> eigen 
 
 ### Then Select:
 save/load -> save_xyz
