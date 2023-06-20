@@ -22,7 +22,7 @@ Once approved to access the dataset, choose your favourite organism and download
 Open the folder. You should see a .hic file in the folder.\
 If your folder doesn't have a .hic file don't worry, download another organism from zenodo.
 
-## Open https://aidenlab.org/juicebox/ in chrome.
+## Download the juicebox app: https://aidenlab.org/juicebox/](https://github.com/aidenlab/Juicebox/wiki/Download
 Open your .hic file using juicebox. You should see a plot of your HiC matrix. You can use the dropdown menus to display data for different chromosomes.
 
 ### Install MATLAB
